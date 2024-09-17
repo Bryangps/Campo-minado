@@ -106,8 +106,8 @@ public class Campo {
 
     boolean objetivoAlcancado(){
         boolean desvendado = !minado && aberto;
-        boolean projegido = minado && marcado;
-        return desvendado || projegido;
+        boolean protegido = minado && marcado;
+        return desvendado || protegido;
     }
 
     long minasNaVizinhanca(){
