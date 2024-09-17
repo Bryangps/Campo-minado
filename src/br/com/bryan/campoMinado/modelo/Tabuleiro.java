@@ -2,7 +2,6 @@ package br.com.bryan.campoMinado.modelo;
 
 import br.com.bryan.campoMinado.excecao.ExplosaoException;
 
-import java.security.cert.TrustAnchor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -46,6 +45,10 @@ public class Tabuleiro {
                 campos.add(new Campo(linha, coluna));
             }
         }
+    }
+
+    public List<Campo> getCampos() {
+        return campos;
     }
 
      private void associarVizinhos() {
